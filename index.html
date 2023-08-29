@@ -1,36 +1,7 @@
 <html>
-<head>
-  <title>Embedding a Web Map using Leaflet</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> 
-  <style>
-    #map { height: 400px; width: 700px; }
-    html, body { height: 100%; margin: 0; padding: 0; }
-  </style>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script>
-    var OpenStreetMap_HOT = L.tileLayer(
-      'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.osm.org">HOT OSM</a>'
-      });
-
-    function initialize() {
-      var map = L.map('map', {
-        center: [43.7034, -72.2887],
-        zoom: 15,
-        layers: OpenStreetMap_HOT
-      });
-      
-      var markerLocation = [43.7034, -72.2887]; // Example marker coordinates
-      var marker = L.marker(markerLocation).addTo(map);
-      
-      var popupContent = '<h2>Dartmouth College Green</h2><p>This is the Dartmouth College Green. It is located at the center of campus and students use it to commute across Dartmouth grounds! Below is a photo:</p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Dartmouth_College_campus_2007-10-20_34%2C_crop_1.jpg" alt="Dartmouth College Green" width="150" height="150">';
-      marker.bindPopup(popupContent);
-    }
-  </script>
-</head>
-<body onload="initialize()">
-  <h1>Embedding a Web Map using Leaflet</h1>
-  <div id="map"></div>
+	<h1>Christian’s Web Page</h1>
+<body>
+	<img src=“sample.png”>
+	<p>Hello and welcome to my web page. I hope you enjoy it!</p>
 </body>
 </html>
